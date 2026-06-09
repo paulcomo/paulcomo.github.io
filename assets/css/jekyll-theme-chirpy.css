@@ -1,0 +1,23 @@
+---
+---
+
+@import 'main';
+
+:root {
+  --color-accent: #f97316;
+  --sidebar-bg: #0f0f0f;
+  --sidebar-muted-color: #a0a0a0;
+  --link-color: #f97316;
+  --link-underline-color: #f97316;
+  --btn-active-bg: #f97316;
+  --btn-active-border-color: #f97316;
+}
+
+[data-mode='dark'] {
+  --color-accent: #f97316;
+  --sidebar-bg: #0f0f0f;
+  --link-color: #f97316;
+  --link-underline-color: #f97316;
+  --btn-active-bg: #f97316;
+  --btn-active-border-color: #f97316;
+}
