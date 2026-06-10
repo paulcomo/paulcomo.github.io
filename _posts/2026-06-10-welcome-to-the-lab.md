@@ -6,7 +6,7 @@ tags: [homelab, proxmox, self-hosted]
 description: "First post — what this blog is, what I'm running, and why I bother."
 ---
 
-Every homelab starts somewhere. Mine started with a single used Dell OptiPlex shoved under a desk running Plex. That was a few years ago. Now it's a full rack, a managed switch, VLANs, a handful of VMs, and a growing list of services I run myself because I can.
+Every homelab starts somewhere. Mine started with a decomissioned 2012 Mac Mini running esxi running varios VM's. That was a few years ago. Now it's neat little rack, a bunch of containers, and a growing list of services I run myself because I can.
 
 This blog is where I document it.
 
@@ -14,15 +14,13 @@ This blog is where I document it.
 
 The core of the lab right now:
 
-- **Hypervisor:** Proxmox VE on a refurbished Dell PowerEdge
-- **Networking:** pfSense for routing, a managed switch with VLANs for segmentation
-- **Storage:** TrueNAS for NAS duties, connected via NFS/SMB to the rest of the stack
-- **Containers:** Portainer managing a mix of Docker Compose stacks
-- **Monitoring:** Grafana + Prometheus, because dashboards are satisfying
+- **Hypervisor:** Proxmox cluster on teo HP ELitedesks
+- **Networking:** A modest Unifi stack, a managed switch with VLANs for segmentation
+- **Storage:** An aging Synology from 2019
 
 ## Why Bother
 
-Running your own infrastructure teaches you things that no certification course will. You break something at 11pm and you have to figure out why — not because it's your job, but because you made the problem and you have to live with it.
+Running your own infrastructure teaches you things that no certification course will. You break something at 11pm and you have to figure out why, not because it's your job, but because you made the problem and you have to live with it.
 
 It also keeps the skills sharp. A lot of what I've learned in the lab has shown up directly in how I approach things at work.
 
@@ -32,4 +30,3 @@ I'll be writing up specific builds, configs, and the inevitable troubleshooting 
 
 ---
 
-If any of this sounds familiar, stick around.
