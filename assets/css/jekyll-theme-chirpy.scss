@@ -11,45 +11,87 @@
 
 :root {
   /* Sidebar */
-  --sidebar-bg:           #1c1917;  /* stone-950 — warm dark anchor */
-  --sidebar-muted-color:  #a8a29e;  /* stone-400 */
+  --sidebar-bg:           #1c1917;
+  --sidebar-muted-color:  #a8a29e;
   --sidebar-active-color: #f97316;
   --sidebar-hover-bg:     rgba(249, 115, 22, 0.1);
 
   /* Body */
-  --body-bg:              #fafaf9;  /* stone-50 — warm off-white, much brighter */
+  --body-bg:              #fafaf9;
   --card-bg-color:        #ffffff;
 
   /* Typography */
-  --heading-color:        #1c1917;  /* stone-950 */
-  --text-color:           #44403c;  /* stone-700 */
-  --label-color:          #78716c;  /* stone-500 */
+  --heading-color:        #1c1917;
+  --text-color:           #44403c;
+  --label-color:          #78716c;
 
   /* Orange accent */
   --color-accent:               #f97316;
-  --link-color:                 #c2410c;  /* orange-700, readable on white */
+  --link-color:                 #c2410c;
   --link-underline-color:       #f97316;
   --btn-active-bg:              #f97316;
   --btn-active-border-color:    #f97316;
 
   /* Borders */
-  --border-color:         #e7e5e4;  /* stone-200 */
+  --border-color:         #e7e5e4;
 }
 
 [data-mode='dark'] {
-  --body-bg:              #0c0a09;  /* stone-950 */
+  --body-bg:              #0c0a09;
   --card-bg-color:        #1c1917;
   --heading-color:        #fafaf9;
-  --text-color:           #d6d3d1;  /* stone-300 */
+  --text-color:           #d6d3d1;
   --label-color:          #a8a29e;
-  --border-color:         #292524;  /* stone-800 */
+  --border-color:         #292524;
 
   --color-accent:               #f97316;
-  --link-color:                 #fb923c;  /* orange-400, pops on dark */
+  --link-color:                 #fb923c;
   --link-underline-color:       #fb923c;
   --btn-active-bg:              #f97316;
   --btn-active-border-color:    #f97316;
 
   --sidebar-bg:           #111110;
   --sidebar-muted-color:  #78716c;
+}
+
+/* ─── Explicit orange targets ─────────────────────────────────── */
+
+/* Site title in sidebar */
+#sidebar .site-title a {
+  color: #f97316;
+}
+#sidebar .site-title a:hover {
+  color: #fb923c;
+}
+
+/* Active nav link */
+#sidebar .nav-link.active {
+  color: #f97316;
+}
+#sidebar .nav-link:hover {
+  color: #f97316;
+}
+
+/* Post category / tag chips */
+.post-tag,
+.btn.btn-outline-primary {
+  border-color: #f97316;
+  color: #c2410c;
+}
+.post-tag:hover,
+.btn.btn-outline-primary:hover {
+  background-color: #f97316;
+  border-color: #f97316;
+  color: #fff;
+}
+
+/* Topbar search focus ring */
+#search-input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+}
+
+/* Post title links on home feed */
+.post-preview .post-title a:hover {
+  color: #f97316;
 }

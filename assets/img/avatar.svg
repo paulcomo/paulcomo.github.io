@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Warm dark background matching sidebar -->
+  <rect width="200" height="200" rx="24" fill="#1c1917"/>
+
+  <!-- Terminal prompt ">" in orange -->
+  <text x="38" y="118" font-family="'Courier New', Courier, monospace"
+        font-size="72" font-weight="700" fill="#f97316">&#62;_</text>
+</svg>
