@@ -1,5 +1,5 @@
 ---
-title: "Welcome to the Lab"
+title: "Welcome to my homelab"
 date: 2026-06-10 18:00:00 -0400
 categories: [Homelab, General]
 tags: [homelab, proxmox, self-hosted]
