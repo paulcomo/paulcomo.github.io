@@ -3,21 +3,53 @@
 
 @import 'main';
 
+/*
+ * Warm stone + orange palette
+ * Stone greys have a slight warmth that pairs naturally with orange,
+ * avoiding the clinical feel of pure cool-grey defaults.
+ */
+
 :root {
-  --color-accent: #f97316;
-  --sidebar-bg: #0f0f0f;
-  --sidebar-muted-color: #a0a0a0;
-  --link-color: #f97316;
-  --link-underline-color: #f97316;
-  --btn-active-bg: #f97316;
-  --btn-active-border-color: #f97316;
+  /* Sidebar */
+  --sidebar-bg:           #1c1917;  /* stone-950 — warm dark anchor */
+  --sidebar-muted-color:  #a8a29e;  /* stone-400 */
+  --sidebar-active-color: #f97316;
+  --sidebar-hover-bg:     rgba(249, 115, 22, 0.1);
+
+  /* Body */
+  --body-bg:              #fafaf9;  /* stone-50 — warm off-white, much brighter */
+  --card-bg-color:        #ffffff;
+
+  /* Typography */
+  --heading-color:        #1c1917;  /* stone-950 */
+  --text-color:           #44403c;  /* stone-700 */
+  --label-color:          #78716c;  /* stone-500 */
+
+  /* Orange accent */
+  --color-accent:               #f97316;
+  --link-color:                 #c2410c;  /* orange-700, readable on white */
+  --link-underline-color:       #f97316;
+  --btn-active-bg:              #f97316;
+  --btn-active-border-color:    #f97316;
+
+  /* Borders */
+  --border-color:         #e7e5e4;  /* stone-200 */
 }
 
 [data-mode='dark'] {
-  --color-accent: #f97316;
-  --sidebar-bg: #0f0f0f;
-  --link-color: #f97316;
-  --link-underline-color: #f97316;
-  --btn-active-bg: #f97316;
-  --btn-active-border-color: #f97316;
+  --body-bg:              #0c0a09;  /* stone-950 */
+  --card-bg-color:        #1c1917;
+  --heading-color:        #fafaf9;
+  --text-color:           #d6d3d1;  /* stone-300 */
+  --label-color:          #a8a29e;
+  --border-color:         #292524;  /* stone-800 */
+
+  --color-accent:               #f97316;
+  --link-color:                 #fb923c;  /* orange-400, pops on dark */
+  --link-underline-color:       #fb923c;
+  --btn-active-bg:              #f97316;
+  --btn-active-border-color:    #f97316;
+
+  --sidebar-bg:           #111110;
+  --sidebar-muted-color:  #78716c;
 }
