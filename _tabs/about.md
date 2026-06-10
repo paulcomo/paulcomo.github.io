@@ -4,13 +4,13 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-I work in IT — have for a while now. Started out doing the usual break-fix stuff, and somewhere along the way ended up managing infrastructure, leading teams, and spending a lot of time thinking about how systems fit together.
+I've been in IT long enough to have fixed plenty of things I shouldn't have touched and built plenty of things nobody asked for, both at work and at home. I'm currently a department of one, so my day might involve crawling under a desk to replace a cable, planning the next few years of infrastructure, automating repetitive tasks, or figuring out why something that worked yesterday suddenly doesn't today. I like building systems that are reliable enough that nobody has to think about them.
 
-The homelab started as a way to keep learning without touching production. Now it's just a thing I do. Servers, VMs, containers, networking gear I definitely didn't need — if it blinks and has an IP address, it probably lives in my rack somewhere.
+My homelab started as a pile of containers and services with no real plan: an ad blocker for the house, Home Assistant, a Minecraft server, and the usual rabbit holes. Treating it like real infrastructure is what turned it into something useful. Today it runs on a Proxmox cluster with Ansible, monitoring, backups, and whatever I'm experimenting with that week. It's where I learn, test ideas, and occasionally break things before they make it into production.
 
-Outside of that, I've got a few 3D printers running. Some of what comes off them is useful. A lot of it is just fun to make.
+I've also been into 3D printing for years, going from a Monoprice to an Ender 3 and eventually a Prusa. Most of what I print is functional, although some projects seemed like better ideas late at night than they did the next morning.
 
-This site is where I write things down. Lab notes, stuff I figured out the hard way, thoughts on IT as a career, and whatever else I'm currently building or breaking. It's mostly for me, but if something here saves you a few hours of searching, that works too.
+This site is mostly notes for my future self: homelab projects, automation writeups, troubleshooting guides, and thoughts on the industry. If something here saves you an hour of searching, then it did its job.
 
 ---
 
