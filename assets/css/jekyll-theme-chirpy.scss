@@ -104,33 +104,66 @@ code:not([class]) {
   box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.25);
 }
 
-/* ─── Post card banner strip ────────────────────────────────── */
+/* ─── Post card banner strip (homepage) ─────────────────────── */
 
 .post-card-banner {
   width: 100%;
   height: 90px;
-  display: flex;
-  align-items: center;
-  padding-left: 1.5rem;
-  border-radius: 4px 4px 0 0;
   overflow: hidden;
+  border-radius: 4px 4px 0 0;
+  flex-shrink: 0;
 }
 
-.post-card-banner img {
-  height: 60px;
-  width: auto;
+/* SVG/logo: left-aligned, contained */
+.post-card-banner img[src$=".svg"] {
+  display: block;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  object-position: left center;
+  padding: 0.75rem 1.5rem;
 }
 
-/* When post has a real wide image, fill the strip */
-.post-card-banner img[src$=".jpg"],
-.post-card-banner img[src$=".jpeg"],
-.post-card-banner img[src$=".png"],
-.post-card-banner img[src$=".webp"] {
+/* Real photos: fill edge to edge */
+.post-card-banner img:not([src$=".svg"]) {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/* ─── Post page header image ─────────────────────────────────── */
+
+/* Override Chirpy's w=1200 h=630 default — show as a banner strip */
+img.preview-img {
+  display: block;
+  width: 100%;
+  height: 90px;
+  object-fit: contain;
+  object-position: left center;
+  background: #111110;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Real photos on post pages should fill naturally */
+img.preview-img:not([src$=".svg"]) {
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
   padding: 0;
+}
+
+/* ─── Post card sizing ───────────────────────────────────────── */
+
+#post-list .card-wrapper {
+  margin-bottom: 1.25rem;
+}
+
+#post-list .post-preview {
+  display: flex;
+  flex-direction: column;
+  height: auto;
 }
 
 /* ─── Content spacing ───────────────────────────────────────── */
