@@ -4,11 +4,9 @@ date: 2026-06-10 18:00:00 -0400
 categories: [Homelab, General]
 tags: [homelab, proxmox, self-hosted]
 description: "Why this blog exists and why I can't seem to leave well enough alone."
-image:
-  path: /assets/img/banner.png
-  alt: "The OverTinkerer banner"
-  card: false
 ---
+
+<img class="post-brand-banner" src="{{ '/assets/img/banner.png' | relative_url }}" alt="The OverTinkerer banner">
 
 I tend to overthink things.
 
