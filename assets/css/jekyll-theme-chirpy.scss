@@ -167,10 +167,11 @@ img.preview-img {
 
 #post-list .card-wrapper {
   margin-bottom: 1rem;
-  height: auto !important;
+}
+#post-list .post-preview {
+  display: block;       /* plain block — no flex stretching */
 }
 #post-list .card-body {
-  flex: none !important;   /* stop Bootstrap stretching the card-body */
   padding: 0.75rem 1rem 1rem;
 }
 #post-list .card-title {
@@ -178,14 +179,20 @@ img.preview-img {
   margin-bottom: 0.25rem;
 }
 #post-list .post-meta {
-  flex-grow: 0 !important; /* stop post-meta pushing card height */
   font-size: 0.8rem;
   margin-top: 0.5rem;
 }
 
 /* ─── Content spacing ───────────────────────────────────────── */
 
-main[aria-label="Main Content"] {
+/* Post page — Chirpy sets px-1 (4px) on the article, override it */
+#main-wrapper article.px-1 {
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
+}
+
+/* Homepage and all pages — boost the main column padding */
+#main-wrapper main {
   padding-left: 2rem !important;
   padding-right: 2rem !important;
 }
