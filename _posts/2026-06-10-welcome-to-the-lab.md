@@ -7,6 +7,7 @@ description: "Why this blog exists and why I can't seem to leave well enough alo
 image:
   path: /assets/img/banner.png
   alt: "The OverTinkerer banner"
+  card: false
 ---
 
 I tend to overthink things.
