@@ -13,7 +13,7 @@
         font-weight="700"
         fill="#f97316">&#62;_</text>
 
-  <!-- Tagline — right side -->
+  <!-- Tagline - right side -->
   <text x="1160" y="72"
         font-family="'Courier New', Courier, monospace"
         font-size="15"
@@ -23,6 +23,5 @@
         font-family="'Courier New', Courier, monospace"
         font-size="15"
         fill="#f97316"
-        opacity="0.5"
-        text-anchor="end">// paul como</text>
+        text-anchor="end">// Paul Como</text>
 </svg>

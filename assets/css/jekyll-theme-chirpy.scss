@@ -37,6 +37,24 @@
   --btn-active-border-color: #f97316;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode='light']) {
+    --sidebar-bg:           #111110;
+    --sidebar-muted-color:  #78716c;
+    --body-bg:              #1a1a1a;
+    --card-bg-color:        #222221;
+    --heading-color:        #fafaf9;
+    --text-color:           #d6d3d1;
+    --label-color:          #a8a29e;
+    --border-color:         #2e2e2c;
+    --color-accent:         #f97316;
+    --link-color:           #fb923c;
+    --link-underline-color: #f97316;
+    --btn-active-bg:        #f97316;
+    --btn-active-border-color: #f97316;
+  }
+}
+
 /* ─── Sidebar ────────────────────────────────────────────────── */
 
 #sidebar .site-title a {
@@ -131,7 +149,18 @@ code:not([class]) {
   line-height: 1.7;
 }
 .site-banner-name {
-  color: rgba(249, 115, 22, 0.5);
+  color: #f97316;
+}
+
+.home-banner {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  margin-bottom: 0.25rem;
+  display: block;
+  animation: none !important;
 }
 
 /* ─── Post card banner strip ─────────────────────────────────── */
@@ -230,6 +259,19 @@ a.post-card-link:hover .post-card-title {
 }
 [data-mode='dark'] .post-card-banner {
   background: #111110;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-mode='light']) article.post-card {
+    background: #222221;
+    border-color: #2e2e2c;
+  }
+  :root:not([data-mode='light']) .post-card-title {
+    color: #fafaf9;
+  }
+  :root:not([data-mode='light']) .post-card-banner {
+    background: #111110;
+  }
 }
 
 /* ─── Content spacing ───────────────────────────────────────── */
