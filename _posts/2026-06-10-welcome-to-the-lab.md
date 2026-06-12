@@ -3,41 +3,41 @@ title: "Overtinkering"
 date: 2026-06-10 18:00:00 -0400
 categories: [Homelab, General]
 tags: [homelab, proxmox, self-hosted]
-description: "First post — what this blog is, what I'm running, and why I bother."
----
+description: "Why this blog exists and why I can't seem to leave well enough alone."
 
-I tend to overthink things. Give me a simple problem and I'll find the system hiding inside it, the dependencies, the edge cases, the "well, what happens when this fails at 2am." It's not always efficient, but it's how my brain works, and eventually it turns into something useful.
+------------------------------------------------------------------------------------
 
-That tendency is what built this. A few years ago it was a decommissioned 2012 Mac Mini running ESXi and a handful of VMs. Now it's a small Proxmox cluster, a growing pile of containers, and a list of services I run myself because the alternative, leaving a problem half-solved, isn't really an option for me. Nothing like the feeling of closing an open loop.
+I tend to overthink things.
 
-This blog is where I document it.
+Give me a simple problem and I'll usually find the system hiding inside it: the dependencies, the edge cases, the failure modes, and the one thing that's going to break at 2am if I ignore it today.
 
-## What I'm Running
+That isn't always efficient, but it's how my brain works.
 
-The core of it right now:
+It's also why this site is called **The OverTinkerer**.
 
-- **Hypervisor:** Proxmox cluster on two HP EliteDesks
-- **Networking:** A modest UniFi stack, and a bunch of VLANs
-- **Storage:** An aging Synology from 2019, but it still works
-- **3D Printer:** a Prusa MK3S+, a real workhorse. Bought it used to replace my Ender 3 V2, which replaced my Monoprice Mini V2. Been 3D printing a long time. Hoping to get a multicolor system at some point.
-- **Smarthome:** Currently running Hubitat C7, forwarding all devices to Home Assistant OS running on a VM for dashboards and the few automations Hubitat can't do. Coming from SmartThings, going all-in on Hubitat made sense.
+My projects rarely stay finished. A simple file server becomes backups, then monitoring, then automation. A smart home becomes network segmentation so IoT devices can't talk to my trusted devices and my camera system can't talk to strangers. A 3D printer starts making cable clips and ends up producing custom rack mounts because nothing off the shelf fits quite right.
 
-Different hobbies, same itch — build the system, then keep improving it.
+The same thing happened with my homelab.
 
-## Why Bother
+It began as a retired Mac mini from work running a handful of virtual machines. Over the years it grew into a Proxmox cluster hosting roughly thirty containers and virtual machines that run everything from media services and photo management to automation workflows and infrastructure that supports the rest of my house.
 
-Running your own infrastructure teaches you things no certification course will. You break something and you have to figure out why, not because it's your job, but because you made the problem and now you live with it.
+Like many homelabs, it evolved one project at a time.
 
-It also keeps the skills sharp. A lot of what I've learned here has shown up directly in how I approach things at work.
+And like many homelabs, much of it originally lived in my head.
 
-## Learning in Public
+Configuration happened manually. Notes were scattered across text files and sticky notes. Updates happened whenever I remembered. If something broke, I could usually fix it, but I couldn't always explain exactly how I had built it in the first place.  I am thankfull for the history command.
 
-Most recently, that meant Ansible. I spent several weeks turning a manually managed pile of containers into something automated and repeatable: provisioning, DNS, updates, backups, all of it.
+Eventually I realized that wasn't sustainable.
 
-I'm also working toward the Okta Certified Professional exam, since it keeps showing up in the kind of roles I'm targeting. I may also pursue the SC-300 Microsoft Identity and Access Administrator cert. This would be my first formal IT certification in my 15-year career.
+Rather than treat the homelab as a collection of experiments, I started treating it like production infrastructure. That meant documentation, repeatability, backups, automation, and designing systems that I could rebuild instead of simply maintaining.
 
-## What's Coming
+This blog exists for the same reason.
 
-Specific builds, configs, and the inevitable troubleshooting rabbit holes. If something took me an hour to figure out that should have taken five minutes, it's probably worth writing down.
+I'm not trying to claim that I've invented anything new. Most of what I've learned came from documentation, forum posts, GitHub issues, Reddit threads, YouTube videos, and people generous enough to write down their own experiences.
+
+Hopefully I'll add a few useful pages to that pile.
+
+If I have to solve the same problem twice, it probably belongs on this blog.
+
 
 ---

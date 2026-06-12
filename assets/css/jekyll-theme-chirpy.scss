@@ -124,6 +124,23 @@ a.post-tag:hover,
 
 /* ─── Post content ───────────────────────────────────────────── */
 
+.about-headshot {
+  float: right;
+  width: min(220px, 42vw);
+  height: auto;
+  border-radius: 6px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .about-headshot {
+    float: none;
+    display: block;
+    width: min(240px, 70vw);
+    margin: 0 auto 1.25rem;
+  }
+}
+
 /* Heading accent — thin orange left border on h2 */
 .post-content h2 {
   border-left: 3px solid #f97316;

@@ -4,18 +4,19 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-I started in IT by accident. I was a 3D character animator and CG generalist who somehow ended up managing the render farm. From there I drifted into Engineering and never left.
+<img class="about-headshot" src="{{ '/assets/img/about-headshot.jpg' | relative_url }}" alt="Paul Como">
 
-Fifteen years later, I'm a Director of IT Operations in the creative industry, mostly in Mac-heavy environments and often as a department of one. On any given day I might be crawling under a desk to replace a cable, planning long-term infrastructure, or figuring out why something that worked yesterday suddenly doesn't today.
+I started in IT by accident. I was a 3D animator and CG generalist who somehow ended up managing the render farm. From there I drifted into Engineering and never left.
 
-My homelab started the same way many do: as a pile of projects with no real plan. It originally ran on a single 2012 Mac mini that had been retired from my job, repurposed to run ESXi long after it should have been put out to pasture. As the lab grew, that became two Mac minis, and eventually I rebuilt the environment on a pair of HP EliteDesk mini PCs running Proxmox.
+Fifteen years later, I'm a Director of IT Operations in the creative industry, mostly in Mac-heavy environments and often as a department of one. My day might involve crawling under a desk to replace a cable, planning infrastructure, automating repetitive tasks, or figuring out why something that worked yesterday suddenly doesn't today.
 
-Along the way I accumulated an ad blocker, Home Assistant, a Minecraft server, and the usual rabbit holes. Over time I stopped treating it like a collection of projects and started treating it like real infrastructure. Today it runs on Proxmox with Ansible, monitoring, backups, and whatever I'm experimenting with that week. It's also where I test ideas before they ever touch production.
+My homelab followed a similar path. It started with a retired 2012 Mac mini running ESXi, became two Mac minis, and today runs on a two-node Proxmox cluster built from HP EliteDesk mini PCs. Along the way I accumulated media servers, automation, monitoring, backups, and enough projects that I eventually had to start treating it like real infrastructure.
 
-Smart home automation (Hubitat and Home Assistant) and 3D printing round out the hobbies. Most of what I print is functional: organizers, adapters, brackets, and whatever my kids dream up. Thanks to my 3D modeling background, many of those designs are ones I created myself rather than downloaded.
+Outside of work, I spend far too much time on home automation and 3D printing. Most of what I print is functional: organizers, brackets, rack mounts, and whatever my kids dream up. My background in 3D modeling means many of those designs are my own.
 
-This site is mostly notes for myself and anyone else who runs into the same problems: homelab projects, automation writeups, and troubleshooting guides. If something here saves you an hour of searching, then it did its job.
+This site is simply a collection of things I've learned: homelab projects, automation writeups, troubleshooting guides, 3D printing projects, and smart home experiments. None of it is intended to be groundbreaking. It's just the documentation I wish I had found before spending an evening figuring something out myself.
 
+If I have to solve the same problem twice, it probably belongs on this blog.
 
 ---
 
