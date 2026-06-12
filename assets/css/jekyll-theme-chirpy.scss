@@ -3,95 +3,110 @@
 
 @import 'main';
 
-/*
- * Warm stone + orange palette
- * Stone greys have a slight warmth that pairs naturally with orange,
- * avoiding the clinical feel of pure cool-grey defaults.
- */
+/* ─── Color tokens ───────────────────────────────────────────── */
 
 :root {
-  /* Sidebar */
   --sidebar-bg:           #1c1917;
   --sidebar-muted-color:  #a8a29e;
-  --sidebar-active-color: #f97316;
-  --sidebar-hover-bg:     rgba(249, 115, 22, 0.1);
-
-  /* Body */
   --body-bg:              #fafaf9;
   --card-bg-color:        #ffffff;
-
-  /* Typography */
   --heading-color:        #1c1917;
   --text-color:           #44403c;
   --label-color:          #78716c;
-
-  /* Orange accent */
-  --color-accent:               #f97316;
-  --link-color:                 #c2410c;
-  --link-underline-color:       #f97316;
-  --btn-active-bg:              #f97316;
-  --btn-active-border-color:    #f97316;
-
-  /* Borders */
+  --color-accent:         #f97316;
+  --link-color:           #c2410c;
+  --link-underline-color: #f97316;
+  --btn-active-bg:        #f97316;
+  --btn-active-border-color: #f97316;
   --border-color:         #e7e5e4;
 }
 
 [data-mode='dark'] {
-  --body-bg:              #0c0a09;
-  --card-bg-color:        #1c1917;
+  --sidebar-bg:           #111110;
+  --sidebar-muted-color:  #78716c;
+  --body-bg:              #1a1a1a;
+  --card-bg-color:        #222221;
   --heading-color:        #fafaf9;
   --text-color:           #d6d3d1;
   --label-color:          #a8a29e;
-  --border-color:         #292524;
-
-  --color-accent:               #f97316;
-  --link-color:                 #fb923c;
-  --link-underline-color:       #fb923c;
-  --btn-active-bg:              #f97316;
-  --btn-active-border-color:    #f97316;
-
-  --sidebar-bg:           #111110;
-  --sidebar-muted-color:  #78716c;
+  --border-color:         #2e2e2c;
+  --color-accent:         #f97316;
+  --link-color:           #fb923c;
+  --link-underline-color: #f97316;
+  --btn-active-bg:        #f97316;
+  --btn-active-border-color: #f97316;
 }
 
-/* ─── Explicit orange targets ─────────────────────────────────── */
+/* ─── Sidebar ────────────────────────────────────────────────── */
 
-/* Site title in sidebar */
 #sidebar .site-title a {
   color: #f97316;
+  font-weight: 700;
 }
-#sidebar .site-title a:hover {
-  color: #fb923c;
+#sidebar .site-title a:hover { color: #fb923c; }
+
+#sidebar .site-subtitle {
+  color: #a8a29e;
 }
 
-/* Active nav link */
 #sidebar .nav-link.active {
   color: #f97316;
+  font-weight: 600;
 }
-#sidebar .nav-link:hover {
+#sidebar .nav-link:hover { color: #f97316; }
+
+/* ─── Post list (home feed) ──────────────────────────────────── */
+
+.post-preview h1 a:hover,
+.post-preview .post-title a:hover,
+h2.post-title a:hover {
   color: #f97316;
 }
 
-/* Post category / tag chips */
+/* Category / tag chips */
 .post-tag,
+a.post-tag,
+.tag,
 .btn.btn-outline-primary {
   border-color: #f97316;
-  color: #c2410c;
+  color: #fb923c;
 }
 .post-tag:hover,
+a.post-tag:hover,
+.tag:hover,
 .btn.btn-outline-primary:hover {
   background-color: #f97316;
   border-color: #f97316;
   color: #fff;
 }
 
-/* Topbar search focus ring */
-#search-input:focus {
-  border-color: #f97316;
-  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
+/* ─── Post content ───────────────────────────────────────────── */
+
+/* Heading accent — thin orange left border on h2 */
+.post-content h2 {
+  border-left: 3px solid #f97316;
+  padding-left: 0.6rem;
 }
 
-/* Post title links on home feed */
-.post-preview .post-title a:hover {
-  color: #f97316;
+/* Blockquote left bar */
+blockquote {
+  border-left-color: #f97316;
+}
+
+/* Inline code */
+code:not([class]) {
+  color: #fb923c;
+}
+
+/* Search focus */
+#search-input:focus {
+  border-color: #f97316;
+  box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.25);
+}
+
+/* ─── Horizontal rule ────────────────────────────────────────── */
+
+hr {
+  border-color: #f97316;
+  opacity: 0.25;
 }
