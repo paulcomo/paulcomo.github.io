@@ -104,6 +104,20 @@ code:not([class]) {
   box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.25);
 }
 
+/* ─── Content spacing ───────────────────────────────────────── */
+
+#main-content {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  #main-content {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
 /* ─── Horizontal rule ────────────────────────────────────────── */
 
 hr {

@@ -4,6 +4,9 @@ date: 2026-06-10 18:00:00 -0400
 categories: [Homelab, General]
 tags: [homelab, proxmox, self-hosted]
 description: "First post — what this blog is, what I'm running, and why I bother."
+image:
+  path: /assets/img/avatar.svg
+  alt: "Paul Como — homelab blog"
 ---
 
 Every homelab starts somewhere. Mine started with a decomissioned 2012 Mac Mini running esxi running varios VM's. That was a few years ago. Now it's neat little rack, a bunch of containers, and a growing list of services I run myself because I can.
