@@ -163,6 +163,20 @@ img.preview-img {
   display: none !important;
 }
 
+/* ─── Sidebar avatar — no white box ─────────────────────────── */
+
+#sidebar img.avatar {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* ─── Kill Chirpy shimmer animation on content images ────────── */
+
+#main-wrapper img {
+  animation: none !important;
+}
+
 /* ─── Post cards ─────────────────────────────────────────────── */
 
 article.post-card {
@@ -204,6 +218,18 @@ a.post-card-link:hover .post-card-title {
 .post-card-meta {
   font-size: 0.78rem;
   color: var(--label-color);
+}
+
+/* Dark mode card overrides */
+[data-mode='dark'] article.post-card {
+  background: #222221;
+  border-color: #2e2e2c;
+}
+[data-mode='dark'] .post-card-title {
+  color: #fafaf9;
+}
+[data-mode='dark'] .post-card-banner {
+  background: #111110;
 }
 
 /* ─── Content spacing ───────────────────────────────────────── */
