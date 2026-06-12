@@ -63,6 +63,11 @@
 }
 #sidebar .site-title a:hover { color: #fb923c; }
 
+#sidebar .profile-wrapper {
+  padding-left: 1.35rem;
+  padding-right: 1rem;
+}
+
 #sidebar .site-subtitle {
   color: #a8a29e;
 }
@@ -79,6 +84,25 @@
 .post-preview .post-title a:hover,
 h2.post-title a:hover {
   color: #f97316;
+}
+
+/* ─── Page headings ──────────────────────────────────────────── */
+
+.brand-page-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  color: #f97316;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(1.7rem, 4vw, 2.45rem);
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.15;
+  margin-bottom: 1.6rem;
+}
+
+.brand-page-prompt {
+  flex: 0 0 auto;
 }
 
 /* Category / tag chips */
@@ -155,13 +179,16 @@ code:not([class]) {
 .home-banner {
   background-color: #111110;
   background-image: url('/assets/img/banner.png');
+  background-origin: content-box;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  box-sizing: border-box;
   border-radius: 8px;
   width: 100%;
   height: 140px;
   margin-bottom: 0.25rem;
+  padding: 1rem 1.5rem;
   display: block;
   animation: none !important;
 }
@@ -169,7 +196,7 @@ code:not([class]) {
 @media (max-width: 576px) {
   .home-banner {
     height: 112px;
-    background-size: contain;
+    padding: 0.5rem 0.625rem;
   }
 }
 
@@ -211,7 +238,6 @@ img.preview-img {
   background: transparent !important;
   border-color: transparent !important;
   box-shadow: none !important;
-  padding: 0 !important;
 }
 
 #sidebar img.avatar,
