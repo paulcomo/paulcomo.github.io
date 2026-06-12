@@ -163,24 +163,47 @@ img.preview-img {
   display: none !important;
 }
 
-/* ─── Post card sizing ───────────────────────────────────────── */
+/* ─── Post cards ─────────────────────────────────────────────── */
 
-#post-list .card-wrapper {
-  margin-bottom: 1rem;
+article.post-card {
+  display: block;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+  background: var(--card-bg-color);
 }
-#post-list .post-preview {
-  display: block;       /* plain block — no flex stretching */
+
+a.post-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
-#post-list .card-body {
-  padding: 0.75rem 1rem 1rem;
+a.post-card-link:hover .post-card-title {
+  color: #f97316;
 }
-#post-list .card-title {
+
+.post-card-body {
+  padding: 0.85rem 1.1rem 1rem;
+}
+
+.post-card-title {
   font-size: 1.05rem;
-  margin-bottom: 0.25rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem;
+  color: var(--heading-color);
+  transition: color 0.15s;
 }
-#post-list .post-meta {
-  font-size: 0.8rem;
-  margin-top: 0.5rem;
+
+.post-card-desc {
+  font-size: 0.875rem;
+  color: var(--label-color);
+  margin: 0 0 0.6rem;
+}
+
+.post-card-meta {
+  font-size: 0.78rem;
+  color: var(--label-color);
 }
 
 /* ─── Content spacing ───────────────────────────────────────── */
