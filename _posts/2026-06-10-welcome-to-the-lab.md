@@ -4,8 +4,7 @@ date: 2026-06-10 18:00:00 -0400
 categories: [Homelab, General]
 tags: [homelab, proxmox, self-hosted]
 description: "Why this blog exists and why I can't seem to leave well enough alone."
-
-------------------------------------------------------------------------------------
+---
 
 I tend to overthink things.
 
@@ -25,7 +24,7 @@ Like many homelabs, it evolved one project at a time.
 
 And like many homelabs, much of it originally lived in my head.
 
-Configuration happened manually. Notes were scattered across text files and sticky notes. Updates happened whenever I remembered. If something broke, I could usually fix it, but I couldn't always explain exactly how I had built it in the first place.  I am thankfull for the history command.
+Configuration happened manually. Notes were scattered across text files and sticky notes. Updates happened whenever I remembered. If something broke, I could usually fix it, but I couldn't always explain exactly how I had built it in the first place. I am thankfull for the history command.
 
 Eventually I realized that wasn't sustainable.
 
@@ -38,6 +37,5 @@ I'm not trying to claim that I've invented anything new. Most of what I've learn
 Hopefully I'll add a few useful pages to that pile.
 
 If I have to solve the same problem twice, it probably belongs on this blog.
-
 
 ---
