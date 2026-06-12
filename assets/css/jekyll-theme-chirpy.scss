@@ -104,79 +104,95 @@ code:not([class]) {
   box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.25);
 }
 
-/* ─── Post card banner strip (homepage) ─────────────────────── */
+/* ─── Home page banner ───────────────────────────────────────── */
+
+.site-banner {
+  background: #111110;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+}
+.site-banner-prompt {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f97316;
+  line-height: 1;
+}
+.site-banner-tagline {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8rem;
+  color: #78716c;
+  text-align: right;
+  line-height: 1.7;
+}
+.site-banner-name {
+  color: rgba(249, 115, 22, 0.5);
+}
+
+/* ─── Post card banner strip ─────────────────────────────────── */
 
 .post-card-banner {
-  width: 100%;
-  height: 90px;
-  overflow: hidden;
+  height: 68px;
+  background: #111110;
+  display: flex;
+  align-items: center;
+  padding-left: 1.25rem;
   border-radius: 4px 4px 0 0;
   flex-shrink: 0;
 }
-
-/* SVG/logo: left-aligned, contained */
-.post-card-banner img[src$=".svg"] {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: left center;
-  padding: 0.75rem 1.5rem;
+.post-card-prompt {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #f97316;
+  line-height: 1;
 }
-
-/* Real photos: fill edge to edge */
-.post-card-banner img:not([src$=".svg"]) {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.post-card-photo {
+  background-size: cover;
+  background-position: center;
 }
 
 /* ─── Post page header image ─────────────────────────────────── */
 
-/* Override Chirpy's w=1200 h=630 default — show as a banner strip */
 img.preview-img {
-  display: block;
-  width: 100%;
-  height: 90px;
-  object-fit: contain;
-  object-position: left center;
-  background: #111110;
-  border-radius: 4px;
-  padding: 0.75rem 1.5rem;
-}
-
-/* Real photos on post pages should fill naturally */
-img.preview-img:not([src$=".svg"]) {
-  height: 220px;
-  object-fit: cover;
-  object-position: center;
-  padding: 0;
+  display: none; /* hide the giant Chirpy header image — we use the banner strip */
 }
 
 /* ─── Post card sizing ───────────────────────────────────────── */
 
 #post-list .card-wrapper {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
 }
-
 #post-list .post-preview {
-  display: flex;
-  flex-direction: column;
   height: auto;
+}
+#post-list .card-body {
+  padding: 0.75rem 1rem 1rem;
+}
+#post-list .card-title {
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+#post-list .post-meta {
+  font-size: 0.8rem;
 }
 
 /* ─── Content spacing ───────────────────────────────────────── */
 
-#main-content {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+#content {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 768px) {
-  #main-content {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+  #content {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 

@@ -61,15 +61,17 @@ layout: default
             {% endunless %}
           {% endif %}
 
-          {% assign alt = post.image.alt | xml_escape | default: 'Preview Image' %}
-
-          <div class="post-card-banner" style="background:#111110;">
-            <img src="{{ src }}" alt="{{ alt }}">
-          </div>
+          {% if src contains '.svg' %}
+            <div class="post-card-banner">
+              <span class="post-card-prompt">&#62;_</span>
+            </div>
+          {% else %}
+            <div class="post-card-banner post-card-photo" style="background-image:url('{{ src }}');"></div>
+          {% endif %}
 
         {% else %}
-          <div class="post-card-banner" style="background:#111110;">
-            <img src="/assets/img/avatar.svg" alt="Post preview">
+          <div class="post-card-banner">
+            <span class="post-card-prompt">&#62;_</span>
           </div>
         {% endif %}
 
