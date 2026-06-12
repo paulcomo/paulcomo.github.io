@@ -249,12 +249,13 @@ code:not([class]) {
 
 img.preview-img {
   display: block !important;
-  width: 100%;
+  width: min(100%, 900px);
   height: auto !important;
-  max-height: none !important;
   aspect-ratio: 1800 / 400;
   object-fit: contain !important;
   border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ─── Sidebar avatar — no white box ─────────────────────────── */
