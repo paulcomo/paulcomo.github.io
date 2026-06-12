@@ -153,28 +153,23 @@ code:not([class]) {
 }
 
 .home-banner {
-  background: #111110;
+  background-color: #111110;
+  background-image: url('/assets/img/banner.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 8px;
   width: 100%;
   height: 140px;
   margin-bottom: 0.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
+  display: block;
   animation: none !important;
 }
 
 @media (max-width: 576px) {
   .home-banner {
     height: 112px;
-    padding: 0 1rem;
-  }
-  .home-banner .site-banner-prompt {
-    font-size: 2.35rem;
-  }
-  .home-banner .site-banner-tagline {
-    font-size: 0.68rem;
+    background-size: contain;
   }
 }
 
@@ -209,10 +204,23 @@ img.preview-img {
 
 /* ─── Sidebar avatar — no white box ─────────────────────────── */
 
+#sidebar .profile-wrapper,
+#sidebar #avatar,
+#sidebar .avatar,
 #sidebar img.avatar {
   background: transparent !important;
   border-color: transparent !important;
   box-shadow: none !important;
+  padding: 0 !important;
+}
+
+#sidebar img.avatar,
+#sidebar #avatar img,
+#sidebar .profile-wrapper img {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  object-fit: contain;
 }
 
 /* ─── Kill Chirpy shimmer animation on content images ────────── */
