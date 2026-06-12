@@ -160,18 +160,17 @@ code:not([class]) {
 /* ─── Post page header image ─────────────────────────────────── */
 
 img.preview-img {
-  display: none; /* hide the giant Chirpy header image — we use the banner strip */
+  display: none !important;
 }
 
 /* ─── Post card sizing ───────────────────────────────────────── */
 
 #post-list .card-wrapper {
   margin-bottom: 1rem;
-}
-#post-list .post-preview {
-  height: auto;
+  height: auto !important;
 }
 #post-list .card-body {
+  flex: none !important;   /* stop Bootstrap stretching the card-body */
   padding: 0.75rem 1rem 1rem;
 }
 #post-list .card-title {
@@ -179,21 +178,16 @@ img.preview-img {
   margin-bottom: 0.25rem;
 }
 #post-list .post-meta {
+  flex-grow: 0 !important; /* stop post-meta pushing card height */
   font-size: 0.8rem;
+  margin-top: 0.5rem;
 }
 
 /* ─── Content spacing ───────────────────────────────────────── */
 
-#content {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-@media (min-width: 768px) {
-  #content {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+main[aria-label="Main Content"] {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
 }
 
 /* ─── Horizontal rule ────────────────────────────────────────── */
