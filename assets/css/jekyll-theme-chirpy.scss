@@ -249,6 +249,22 @@ img.preview-img {
   border: 0 !important;
   box-shadow: none !important;
   object-fit: contain;
+  transform: none !important;
+  transition: none !important;
+}
+
+#sidebar .avatar:hover,
+#sidebar .avatar:focus,
+#sidebar .avatar:hover img,
+#sidebar .avatar:focus img,
+#sidebar #avatar:hover,
+#sidebar #avatar:focus,
+#sidebar #avatar:hover img,
+#sidebar #avatar:focus img,
+#sidebar .profile-wrapper a:hover img,
+#sidebar .profile-wrapper a:focus img {
+  transform: none !important;
+  transition: none !important;
 }
 
 /* ─── Kill Chirpy shimmer animation on content images ────────── */
