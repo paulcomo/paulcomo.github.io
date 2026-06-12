@@ -104,6 +104,35 @@ code:not([class]) {
   box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.25);
 }
 
+/* ─── Post card banner strip ────────────────────────────────── */
+
+.post-card-banner {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  border-radius: 4px 4px 0 0;
+  overflow: hidden;
+}
+
+.post-card-banner img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* When post has a real wide image, fill the strip */
+.post-card-banner img[src$=".jpg"],
+.post-card-banner img[src$=".jpeg"],
+.post-card-banner img[src$=".png"],
+.post-card-banner img[src$=".webp"] {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 0;
+}
+
 /* ─── Content spacing ───────────────────────────────────────── */
 
 #main-content {
