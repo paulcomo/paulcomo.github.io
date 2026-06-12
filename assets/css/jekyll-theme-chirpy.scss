@@ -245,7 +245,12 @@ code:not([class]) {
 /* ─── Post page header image ─────────────────────────────────── */
 
 img.preview-img {
-  display: none !important;
+  display: block !important;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1800 / 400;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 /* ─── Sidebar avatar — no white box ─────────────────────────── */
