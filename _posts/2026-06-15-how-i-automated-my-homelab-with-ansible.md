@@ -4,10 +4,9 @@ date: 2026-06-15
 categories: [Homelab, Automation]
 tags: [ansible, homelab, proxmox, infrastructure-as-code]
 description: "Turning a manually managed Proxmox homelab into reproducible infrastructure."
-image:
-  path: /assets/img/posts/ansible-homelab.png
-  alt: How I Automated My Homelab with Ansible
 ---
+
+<img class="post-brand-banner" src="{{ '/assets/img/ansible-homelab.jpg' | relative_url }}" alt="How I Automated My Homelab with Ansible">
 
 Like many homelabs, mine grew organically. Jellyfin became Immich, then AdGuard Home, then a second bare-metal AdGuard Home on a Raspberry Pi so DNS survives a Proxmox outage (overtinker much?). I even built an n8n workflow that scrapes my kids' awful school lunch website and automatically prints the lunch menu every month.
 
