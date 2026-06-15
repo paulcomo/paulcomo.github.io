@@ -18,7 +18,7 @@ My goal became simple: if I had to rebuild my lab tomorrow, I wanted to do it fr
 
 ## Why Ansible
 
-After 15 years in IT, infrastructure as code was a major gap in my skill set — so I decided to learn it by solving problems I actually had.
+After 15 years in IT, infrastructure as code was a major gap in my skill set, so I decided to learn it by solving problems I actually had.
 
 I didn't want to build practice examples that would get deleted after the lesson. Instead, I asked Claude to help design a structured curriculum around a single goal: automate my existing production homelab.
 
