@@ -4,6 +4,9 @@ date: 2026-06-15
 categories: [Homelab, Automation]
 tags: [ansible, homelab, proxmox, infrastructure-as-code]
 description: "Turning a manually managed Proxmox homelab into reproducible infrastructure."
+image:
+  path: /assets/img/posts/ansible-homelab.jpg
+  alt: How I Automated My Homelab with Ansible
 ---
 
 Like many homelabs, mine grew organically. Jellyfin became Immich, then AdGuard Home, then a second bare-metal AdGuard Home on a Raspberry Pi so DNS survives a Proxmox outage (overtinker much?). I even built an n8n workflow that scrapes my kids' awful school lunch website and automatically prints the lunch menu every month.
@@ -90,3 +93,5 @@ It was that learning works better when the project matters.
 Every playbook I wrote solved a problem I had that same day. Because the automation runs against infrastructure I actually depend on, I had to think about safety, repeatability, and recovery instead of simply making the code execute once.
 
 Today the repository isn't a collection of exercises. It's the operational documentation for my homelab. New containers, users, DNS records, and updates all flow through code instead of memory.
+
+The companion repo with full commented playbooks and roles is on GitHub: [ansible-homelab-automation](https://github.com/paulcomo/ansible-homelab-automation)
