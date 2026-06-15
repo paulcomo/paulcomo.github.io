@@ -8,7 +8,7 @@ description: "Turning a manually managed Proxmox homelab into reproducible infra
 
 <img class="post-brand-banner" src="{{ '/assets/img/posts/ansible-homelab.png' | relative_url }}" alt="How I Automated My Homelab with Ansible" width="1881" height="836">
 
-Like many homelabs, mine grew organically. Jellyfin became Immich, then AdGuard Home, then a second bare-metal AdGuard Home on a Raspberry Pi so DNS survives a Proxmox outage (overtinker much?). I even built an n8n workflow that scrapes my kids' awful school lunch website and automatically prints the lunch menu every month.
+Like many homelabs, mine grew organically. First Jellyfin for media, then Immich for photo organization, then AdGuard Home for ad blocking, then a second bare-metal AdGuard Home on a Raspberry Pi so DNS survives a Proxmox outage (overtinker much?). I even built an n8n workflow that scrapes my kids' awful school lunch website and automatically prints the lunch menu every month.
 
 Eventually I had roughly 30 containers and VMs to manage. Every new service meant another container configured by hand, DNS entries added manually, users created, and setup steps I'd forget by the next time I needed them.
 
@@ -34,7 +34,7 @@ Before writing a single playbook, I built the foundation:
 
 I also asked Claude to keep the lessons to roughly an hour each so I wouldn't get tired or discouraged. At the same time, I worked through the excellent Ansible video series from Learn Linux TV on YouTube.
 
-During every video I took notes, wrote down questions, and then used Claude to explain the concepts and fill in the gaps.
+During every video I took notes, wrote down questions, and then used Claude to answer thosq q's and fill in the gaps.
 
 Even though it would've been much faster to use Claude Code and have it generate everything for me, I intentionally didn't. I used the normal Claude chat interface and typed every play, task, and playbook myself.
 
@@ -81,7 +81,7 @@ Some of my early playbooks worked exactly once.
 
 They weren't idempotent. They assumed perfect conditions. They failed halfway through and left containers in inconsistent states.
 
-Learning how to use conditionals, validation, block/rescue error handling, serial execution, and safety checks turned out to be more valuable than learning YAML syntax. That's the part no tutorial teaches you — you only find it when something you depend on breaks.
+Learning how to use conditionals, validation, block/rescue error handling, serial execution, and safety checks turned out to be more valuable than learning YAML syntax. That's the part no tutorial teaches you, you only find it when something you depend on breaks.
 
 ## What I Learned
 
