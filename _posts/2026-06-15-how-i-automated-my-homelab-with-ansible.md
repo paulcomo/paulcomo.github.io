@@ -5,7 +5,7 @@ categories: [Homelab, Automation]
 tags: [ansible, homelab, proxmox, infrastructure-as-code]
 description: "Turning a manually managed Proxmox homelab into reproducible infrastructure."
 image:
-  path: /assets/img/posts/ansible-homelab.jpg
+  path: /assets/img/posts/ansible-homelab.png
   alt: How I Automated My Homelab with Ansible
 ---
 
