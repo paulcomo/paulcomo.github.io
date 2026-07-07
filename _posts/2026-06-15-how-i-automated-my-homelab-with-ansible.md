@@ -32,7 +32,7 @@ Before writing a single playbook, I built the foundation:
 - Provisioned my own development account
 - Created a repository that would become the source of truth for the entire project
 
-I also asked Claude to keep the lessons to roughly an hour each so I wouldn't get tired or discouraged. At the same time, I worked through the excellent Ansible video series from Learn Linux TV on YouTube.
+I also asked Claude to keep the lessons to roughly an hour each so I wouldn't get tired or discouraged. At the same time, I worked through the excellent [Ansible series from Learn Linux TV](https://www.youtube.com/playlist?list=PLT98CRl2KxKEUHie1m24-wkyHpEsa4Y70) on YouTube
 
 During every video I took notes, wrote down questions, and then used Claude to answer thosq q's and fill in the gaps.
 
